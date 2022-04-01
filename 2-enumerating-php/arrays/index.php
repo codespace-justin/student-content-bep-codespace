@@ -78,6 +78,4 @@ echo "<h2> Concatenation Example </h2>";
     // display after adding elements
     var_dump($exampleArray);
 
-
-
 ?>
