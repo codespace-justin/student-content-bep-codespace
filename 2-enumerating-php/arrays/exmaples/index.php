@@ -26,13 +26,34 @@ echo "<h2> Concatenation Example </h2>";
 
     echo "<h2> Single Array Examples </h2>"; 
 
-    $cars = ["honda", 'audi', 'ford'];
+    $cars = ["honda", 'audi', 'ford', 'bmw', 'opel', 'mazda'];
 
-    echo $cars[2];
+    print_r($cars);
+    echo '<br>';
 
+    /* create new array, starts counting from index given
+     * arg 1 : array
+     * arg 2 : index where new array starts
+     * arg 3 : number elements
+     */
+    $sliceFromIndex = array_slice($cars, 0, 3);
 
+    // creates new array, adds number of elements from back based on argument
+    /* 
+     * arg 1 : array
+     * arg 2 : index where new array starts
+     * arg 3 : number elements
+     */
+    $sliceFromBack = array_slice($cars, -4);
+ 
+    print_r($sliceFromIndex);
+    echo '<br>';
+
+    print_r($sliceFromBack);
+    echo '<br>';
 
     brake();
+    
 /* --------------------------------
     2D Array
 --------------------------------- */

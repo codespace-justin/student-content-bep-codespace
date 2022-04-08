@@ -48,6 +48,8 @@
         if ($_GET["qualified"]) {
 
             echo "<li class='display'>" . "You have a degree" . "</li>";
+        } else {
+            echo "<li class='display'>" . "You do not have a degree" . "</li>";
         }
 
         ?>
